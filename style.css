@@ -1,0 +1,56 @@
+@font-face {
+    font-family: 'Montserrat';
+    src: url(/whopid.github.io/fonts/Montserrat-Regular.ttf) format('ttf');
+    font-weight: 400;
+  }
+@font-face {
+    font-family: 'Sprite Graffiti';
+    src: url(/whopid.github.io/fonts/SpriteGraffiti.otf) format('otf');
+    font-weight: 400;
+  }
+@font-face {
+    font-family: 'Angle';
+    src: url(/whopid.github.io/fonts/Angle.ttf) format('ttf');
+    font-weight: 400;
+  }
+#wrapper{
+  width: 100%;
+  margin: auto;
+}
+header {
+  width: 100%;
+  background-color: #2C272E;
+  position: fixed;
+}
+nav a{
+  text-decoration: none;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+}
+
+nav li{
+  list-style-position: inside;
+  font: 25px 'Sprite Graffiti';
+  
+}
+.menu li{
+  display: inline-block;
+  padding: 25 px 33 px;
+  margin-top: 12px;
+}
+.menu a{
+  color: white;
+  margin-left: 66px;
+}
+.menu{
+  list-style: none;
+  position: absolute;
+  top: 10px;
+  right: 100px;
+  margin-right: 123px;
+}
+header a{
+  margin-left: 15px;
+}
