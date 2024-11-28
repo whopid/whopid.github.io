@@ -1,3 +1,5 @@
+
+
 @font-face {
     font-family: 'Montserrat';
     src: url(/whopid.github.io/fonts/Montserrat-Regular.ttf) format('ttf');
@@ -13,14 +15,21 @@
     src: url(/whopid.github.io/fonts/Angle.ttf) format('ttf');
     font-weight: 400;
   }
+@font-face {
+  font-family: 'Aero Matics Stencil';
+  src: url(/fonts/ofont.ru_Aero\ Matics\ Stencil.ttf) format('ttf');
+  font-weight: 400;
+}
 #wrapper{
-  width: 100%;
+  width: 100vw;
   margin: auto;
 }
 header {
   width: 100%;
   background-color: #2C272E;
   position: fixed;
+  margin: 0;
+  z-index: 1000;
 }
 nav a{
   text-decoration: none;
@@ -53,4 +62,123 @@ nav li{
 }
 header a{
   margin-left: 15px;
+}
+.welcome{
+  max-width: 100vw;
+  margin: 0;
+  padding: 0;
+}
+.welcome img {
+  width: 100vw;
+  margin: 0;
+}
+
+.banner{
+  position: relative;
+  margin-top: 0;
+  padding: 0;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  width: 100vw;
+}
+
+.banner img {
+  display: flex;
+  width: 100%;
+  z-index: -100;
+  margin: 0%;
+  padding: 0;
+}
+
+body{
+  margin: 0;
+}
+
+.catalog{
+  background: url('images/background-for-catalog.png');
+  margin-top: -5%;
+}
+
+h1{
+  font: 65px 'Sprite Graffiti';
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+h2{
+  font: 45px 'Aero Matics Stencil';
+  color: white;
+}
+h3{
+  font: 20px 'Angle';
+  color: white;
+}
+h4{
+  font: 16px 'Montserrat';
+  color: white;
+}
+
+.lr_buttons{
+  display: flex;
+  justify-content: space-between;
+  width: 100vw;
+  position: absolute;
+  z-index: 100;
+  bottom: 50%;
+}
+
+.lr_buttons button {
+  width: 6%;
+  background-color: rgba(0, 0, 0, 0);
+  border-color: rgba(0, 0, 0, 0);
+}
+
+.naming {
+  width: 80vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left:10%;
+  padding-top: 5%;
+}
+
+hr{
+  background-color: white;
+  height: 3px;
+  border-width: 0;
+}
+
+.skateboards_roulette{
+  max-width:100%;
+}
+
+.skateboards_roulette img{
+  max-width:100%;
+  padding-top: 5%;
+}
+
+.skateboards{
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top:-30%;
+  padding-top: 1%;
+  padding-left: 2%;
+ 
+}
+
+.about h2{
+  padding-left: 22%;
+  margin-top: -4%;
+}
+
+.about h3{
+  padding-left: 3%;
+  margin-top: 1%;
+}
+.about h4{
+  padding-left: 3%;
+  margin-top: 1%;
 }

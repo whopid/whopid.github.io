@@ -4,7 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Skateshop</title>
-    <link rel="stylesheet" href="./style.css"
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./style.css">
+    <script src="jQuery-3.7.1.js"></script>
 </head>
 <body>
     <div id="wrapper">
@@ -12,7 +14,7 @@
             <a href="/"><img src="images/almost-logo.png"></a>
             <nav>
                 <ul class="menu">
-                    <li><a href="/главная/">ГЛАВНАЯ</a></li>
+                    <li><a href="#main">ГЛАВНАЯ</a></li>
                     <li><a href="/акции/">АКЦИИ</a></li>
                     <li><a href="/каталог/">КАТАЛОГ</a></li>
                     <li><a href="/о нас/">О НАС</a></li>
@@ -20,9 +22,49 @@
                 </ul>
             </nav>
         </header>
+        <main>
+            <section id="main" class="welcome">
+                <img src="images/welcome-area.png">
+            </section>
+            <section class="banner">
+                <img src="images/banner-1.png">
+                <div class="lr_buttons">
+                    <button>
+                        <img src="images/left-button.png">
+                    </button>
+                    
+                    <button>
+                        <img src="images/right-button.png">
+                    </button>
+                    
+                </div>
+                <img src="images/rugged-paper-for-banner.png">
+            </section>
+            <section class="catalog">
+                <div class="naming">
+                    <h1>СКЕЙТЫ</h1>
+                    <h1>01</h1>
+                </div>
+                <hr>
+                <div class="skateboards_roulette">
+                    <img src="images/podlozhka-pod-tovary.png">
+                    <div class="skateboards">
+                        <img src="images/skate-1.png">
+                        <img src="images/skate-2.png">
+                        <img src="images/skate-3.png">
+                    </div>
+                    <div class="about">
+                        <h3>SKATEBOARD "SHHH"</h3>
+                        <h4>Новый дизайн старой классики</h4>
+                        <h2>4599 RUB</h2>
+                    </div>
+                </div>
+            </section>
+        </main>
         
-        <section></section>
     </div>
-    <footer></footer>
+    <footer>
+        <nav></nav>
+    </footer>
 </body>
 </html>
