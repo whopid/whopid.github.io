@@ -107,11 +107,11 @@ h1{
   color: white;
 }
 h2{
-  font: 45px 'Aero Matics Stencil';
+  font: 40px 'Aero Matics Stencil';
   color: white;
 }
 h3{
-  font: 20px 'Angle';
+  font: 18px 'Angle';
   color: white;
 }
 h4{
@@ -149,16 +149,16 @@ hr{
   border-width: 0;
 }
 
-.skateboards_roulette{
+.roulette{
   max-width:100%;
 }
 
-.skateboards_roulette img{
+.roulette img{
   max-width:100%;
   padding-top: 5%;
 }
 
-.skateboards{
+.pictures{
   width: 100vw;
   display: flex;
   justify-content: space-between;
@@ -169,16 +169,24 @@ hr{
  
 }
 
+.about{
+  width: 100vw;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 7%;
+  padding-left: 3%;
+}
+
 .about h2{
-  padding-left: 22%;
-  margin-top: -4%;
+  padding-left: 70%;
+  margin-top: -10%;
 }
 
 .about h3{
-  padding-left: 3%;
-  margin-top: 1%;
+  padding-left: 0%;
+  margin-top: 0;
 }
 .about h4{
-  padding-left: 3%;
-  margin-top: 1%;
+  padding-left: 0%;
+  margin-top: 0.5%;
 }
