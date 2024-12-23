@@ -1,142 +1,405 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Skateshop</title>
-    <link rel="stylesheet" href="./reset.css">
-    <link rel="stylesheet" href="./style.css">
-    <script src="jQuery-3.7.1.js"></script>
-</head>
-<body>
-    <div id="wrapper">
-        <header>
-            <a href="/"><img src="images/almost-logo.png"></a>
-            <nav>
-                <ul class="menu">
-                    <li><a href="#main">ГЛАВНАЯ</a></li>
-                    <li><a href="/акции/">АКЦИИ</a></li>
-                    <li><a href="/каталог/">КАТАЛОГ</a></li>
-                    <li><a href="/о нас/">О НАС</a></li>
-                    <li><a href="/отзывы/">ОТЗЫВЫ</a></li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <section id="main" class="welcome">
-                <img src="images/welcome-area.png">
-            </section>
-            <section class="banner">
-                <img src="images/banner-1.png">
-                <div class="lr_buttons">
-                    <button>
-                        <img src="images/left-button.png">
-                    </button>
-                    
-                    <button>
-                        <img src="images/right-button.png">
-                    </button>
-                    
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/slick.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title></title>
+  </head>
+  <body>
+
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <a href="" class="logo">
+            <img src="./images/logo.png" alt="">
+          </a>
+          <nav class="nav">
+            <ul class="nav__list">
+              <li class="nav__list-item"><a href="#main" class="nav__list-link">Главная</a></li>
+              <li class="nav__list-item"><a href="#sale" class="nav__list-link">акции</a></li>
+              <li class="nav__list-item"><a href="#catalog" class="nav__list-link">каталог</a></li>
+              <li class="nav__list-item"><a href="#about" class="nav__list-link">о нас</a></li>
+              <li class="nav__list-item"><a href="#reviews" class="nav__list-link">отзывы</a></li>  
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <main class="main">
+      <div id="main" class="intro">
+        <div class="container">
+          <div class="intro__inner">
+            <!-- <img src="./images/KICKFLIP.png" alt="" class="intro__title"> -->
+            <!-- <img src="./images/skateshop.png" alt="" class="intro__subtitle"> -->
+          </div>
+        </div>
+      </div>
+      <div class="intro-decor"></div>
+      <div id="sale" class="sale">
+          <div class="sale__slider">
+            <div class="slider__item">
+              <img class="slider__item-img" src="./images/slider/image 34.png" alt="">
+              <img src="./images/slider/summer Sale.svg" class="slider__item-text"/>
+              <div class="slider__item-sale">25% for all</div>
+            </div>
+            <div class="slider__item">
+              <img class="slider__item-img" src="./images/slider/back.png" alt="">
+              <img src="./images/slider/summer Sale.svg" class="slider__item-text"/>
+              <div class="slider__item-sale">20% for all</div>
+            </div>
+            <div class="slider__item">
+              <img class="slider__item-img" src="./images/slider/image 34.png" alt="">
+              <img src="./images/slider/summer Sale.svg" class="slider__item-text"/>
+              <div class="slider__item-sale">15% for all</div>
+            </div>
+          </div>
+      </div>
+      <div class="intro-decor"></div>
+
+      <div class="product">
+
+        <section id="catalog" class="section">
+          <h2 class="section__title">
+            <div class="container section-container">
+              <span>Скейты</span>
+              <span>01</span>
+            </div>
+          </h2>
+          <div class="scroll-container">
+            <div class="scroll-content">
+              <div class="item">
+                <div class="item__img-wrapper">
+                  <img src="./images/product/skate/1.png" alt="" class="item__img">
                 </div>
-                <img src="images/rugged-paper-for-banner.png">
-            </section>
-            <section class="catalog">
-                <div class="naming">
-                    <h1>СКЕЙТЫ</h1>
-                    <h1>01</h1>
+                <div class="item__info">
+                  <div class="item__info-content">
+                    <div class="item__info-name">Skateboard “shhh”</div>
+                    <div class="item__info-descr">Новый дизайн старой классики</div>
+                  </div>
+                  <div class="item__info-price">
+                    4599 RUB
+                  </div>
                 </div>
-                <hr>
-                <div class="roulette">
-                    <img src="images/podlozhka-pod-tovary.png">
-                    <div class="pictures">
-                        <img src="images/skate-1.png">
-                        <img src="images/skate-2.png">
-                        <img src="images/skate-3.png">
+              </div>
+              <div class="item">
+                <div class="item__img-wrapper">
+                  <img src="./images/product/skate/2.png" alt="" class="item__img">
+                </div>
+                <div class="item__info">
+                  <div class="item__info-content">
+                    <div class="item__info-name">Skateboard “mon”</div>
+                    <div class="item__info-descr">Та самая классика</div>
+                  </div>
+                  <div class="item__info-price">
+                    3799 RUB
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="item__img-wrapper">
+                  <img src="./images/product/skate/3.png" alt="" class="item__img">
+                </div>
+                <div class="item__info">
+                  <div class="item__info-content">
+                    <div class="item__info-name">Skateboard “sneak”</div>
+                    <div class="item__info-descr">Для истинных фриков</div>
+                  </div>
+                  <div class="item__info-price">
+                    3799 RUB
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="item__img-wrapper">
+                  <img src="./images/product/skate/4.png" alt="" class="item__img">
+                </div>
+                <div class="item__info">
+                  <div class="item__info-content">
+                    <div class="item__info-name">Skateboard “shhh”</div>
+                    <div class="item__info-descr">Новый дизайн старой классики</div>
+                  </div>
+                  <div class="item__info-price">
+                    3799 RUB
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="item__img-wrapper">
+                  <img src="./images/product/skate/5.png" alt="" class="item__img">
+                </div>
+                <div class="item__info">
+                  <div class="item__info-content">
+                    <div class="item__info-name">Skateboard “shhh”</div>
+                    <div class="item__info-descr">Новый дизайн старой классики</div>
+                  </div>
+                  <div class="item__info-price">
+                    3799 RUB
+                  </div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="item__img-wrapper">
+                  <img src="./images/product/skate/6.png" alt="" class="item__img">
+                </div>
+                <div class="item__info">
+                  <div class="item__info-content">
+                    <div class="item__info-name">Skateboard “shhh”</div>
+                    <div class="item__info-descr">Новый дизайн старой классики</div>
+                  </div>
+                  <div class="item__info-price">
+                    3799 RUB
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section">
+          <h2 class="section__title">
+            <div class="container section-container">
+              <span>ДОСКИ</span>
+              <span>02</span>
+            </div>
+          </h2>
+          <div class="scroll-container">
+            <div class="scroll-content">
+              <div class="item">
+                <div class="item__img-wrapper">
+                  <img src="./images/product/board/1.png" alt="" class="item__img">
+                </div>
+                <div class="item__info">
+                  <div class="item__info-content">
+                    <div class="item__info-name">deck “blossom”</div>
+                    <div class="item__info-descr">Свежий весенний дизайн</div>
+                  </div>
+                  <div class="item__info-price">2199 RUB</div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="item__img-wrapper">
+                  <img src="./images/product/board/2.png" alt="" class="item__img">
+                </div>
+                <div class="item__info">
+                  <div class="item__info-content">
+                    <div class="item__info-name">deck “ocean”</div>
+                    <div class="item__info-descr">Для тех, кто мечтает о море</div>
+                  </div>
+                  <div class="item__info-price">1699 RUB</div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="item__img-wrapper">
+                  <img src="./images/product/board/3.png" alt="" class="item__img">
+                </div>
+                <div class="item__info">
+                  <div class="item__info-content">
+                    <div class="item__info-name">deck “blank”</div>
+                    <div class="item__info-descr">Для любителей минимализма</div>
+                  </div>
+                  <div class="item__info-price">1999 RUB</div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="item__img-wrapper">
+                  <img src="./images/product/board/4.png" alt="" class="item__img">
+                </div>
+                <div class="item__info">
+                  <div class="item__info-content">
+                    <div class="item__info-name">deck “blank”</div>
+                    <div class="item__info-descr">Для любителей минимализма</div>
+                  </div>
+                  <div class="item__info-price">1999 RUB</div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="item__img-wrapper">
+                  <img src="./images/product/board/5.png" alt="" class="item__img">
+                </div>
+                <div class="item__info">
+                  <div class="item__info-content">
+                    <div class="item__info-name">deck “blank”</div>
+                    <div class="item__info-descr">Для любителей минимализма</div>
+                  </div>
+                  <div class="item__info-price">1999 RUB</div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="item__img-wrapper">
+                  <img src="./images/product/board/6.png" alt="" class="item__img">
+                </div>
+                <div class="item__info">
+                  <div class="item__info-content">
+                    <div class="item__info-name">deck “blank”</div>
+                    <div class="item__info-descr">Для любителей минимализма</div>
+                  </div>
+                  <div class="item__info-price">1999 RUB</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="section">
+          <h2 class="section__title">
+            <div class="container section-container">
+              <span>колёса</span>
+              <span>03</span>
+            </div>
+          </h2>
+          <div class="scroll-container">
+            <div class="scroll-content">
+              <div class="item">
+                <div class="item__img-wrapper">
+                  <img src="./images/product/wheels/1.png" alt="" class="item__img">
+                </div>
+                <div class="item__info">
+                  <div class="item__info-content">
+                    <div class="item__info-name">wheels “element”</div>
+                    <div class="item__info-descr">65 мм</div>
+                  </div>
+                  <div class="item__info-price">599 RUB</div>
+                </div>
+              </div>
+              <div class="item">
+                <div class="item__img-wrapper">
+                  <img src="./images/product/wheels/2.png" alt="" class="item__img">
+                </div>
+                <div class="item__info">
+                  <div class="item__info-content">
+                    <div class="item__info-name">wheels “spitfire”</div>
+                    <div class="item__info-descr">58 мм</div>
+                  </div>
+                  <div class="item__info-price">799 RUB</div>
+                </div>
+                </div>
+                <div class="item">
+                  <div class="item__img-wrapper">
+                    <img src="./images/product/wheels/3.png" alt="" class="item__img">
+                  </div>
+                  <div class="item__info">
+                    <div class="item__info-content">
+                      <div class="item__info-name">wheels “torque”</div>
+                      <div class="item__info-descr">110 мм</div>
                     </div>
-                    <div class="about">
-                        <div class="first_skate">
-                            <h3>SKATEBOARD "SHHH"</h3>
-                            <h4>Новый дизайн старой классики</h4>
-                            <h2>4599 RUB</h2>
-                        </div>
-                        <div class="second_skate">
-                            <h3>SKATEBOARD "MONSTER"</h3>
-                            <h4>Та самая классика</h4>
-                            <h2>3799 RUB</h2>
-                        </div>
-                        <div class="third_skate">
-                            <h3>SKATEBOARD "SNEAKER"</h3>
-                            <h4>Для истинных фриков</h4>
-                            <h2>2799 RUB</h2>
-                        </div>
-                    </div>
+                    <div class="item__info-price">799 RUB</div>
+                  </div>
                 </div>
-                <div class="naming">
-                    <h1>ДОСКИ</h1>
-                    <h1>02</h1>
-                </div>
-                <hr>
-                <div class="roulette">
-                    <img src="images/podlozhka-pod-tovary.png">
-                    <div class="pictures">
-                        <img src="images/deck-1.png">
-                        <img src="images/deck-2.png">
-                        <img src="images/deck-3.png">
+                <div class="item">
+                  <div class="item__img-wrapper">
+                    <img src="./images/product/wheels/1.png" alt="" class="item__img">
+                  </div>
+                  <div class="item__info">
+                    <div class="item__info-content">
+                      <div class="item__info-name">wheels “element”</div>
+                      <div class="item__info-descr">65 мм</div>
                     </div>
-                    <div class="about">
-                        <div class="first_deck">
-                            <h3>SKATEBOARD "SHHH"</h3>
-                            <h4>Новый дизайн старой классики</h4>
-                            <h2>4599 RUB</h2>
-                        </div>
-                        <div class="second_deck">
-                            <h3>SKATEBOARD "MONSTER"</h3>
-                            <h4>Та самая классика</h4>
-                            <h2>3799 RUB</h2>
-                        </div>
-                        <div class="third_deck">
-                            <h3>SKATEBOARD "SNEAKER"</h3>
-                            <h4>Для истинных фриков</h4>
-                            <h2>2799 RUB</h2>
-                        </div>
-                    </div>
+                    <div class="item__info-price">599 RUB</div>
+                  </div>
                 </div>
-                <div class="naming">
-                    <h1>КОЛЁСА</h1>
-                    <h1>03</h1>
+              </div>
+
+            </div>
+          </div>
+        </section>
+      </div>
+      <div id="about" class="geo">
+        <div class="container">
+          <div class="geo__inner">
+            <img src="./images/geo/map.png" alt="" class="geo__map">
+            <div class="geo__items">
+              <div class="geo__item">
+                <h3 class="geo__item-title">наш Адрес</h3>
+                <p class="geo__item-text">г. Новокузнецк, пр. Металлургов, д. 25 (угол дома со стороны сквера)</p>
+                <p class="geo__item-text"> Работаем  каждый  день  10:00-20:00</p>
+              </div>
+              <div class="geo__item">
+                <h3 class="geo__item-title">как добраться</h3>
+                <p class="geo__item-text">Маршруты автобусов: 81, 66, 365, 7, 53, 54, 25, 27, 91, 86</p>
+                <p class="geo__item-text"> Маршруты троллейбусов: 6, 1, 2</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="reviews" class="reviews">
+        <div class="container">
+          <div class="reviews__inner">
+            <div alt="" class="reviews-title">НАШИ ПОКУПАТЕЛИ</div>
+            <div class="reviews__items">
+              <div class="reviews__item">
+                <img src="./images/reviews/avatar-1.png" alt="" class="reviews__item-avatar">
+                <div class="reviews__item-content">
+                  <p>
+                    Невероятно приятное впечатление от магазина! Широчайший выбор товаров, доступные цены и отзывчивый персонал. Я долго искал определенный товар и нашел его именно здесь. Консультанты помогли мне определиться с выбором и ответили на все интересующие вопросы. Обязательно буду рекомендовать этот магазин своим друзьям!
+                  </p>
                 </div>
-                <hr>
-                <div class="roulette">
-                    <img src="images/podlozhka-pod-tovary.png">
-                    <div class="pictures">
-                        <img src="images/wheels-1.png">
-                        <img src="images/wheels-2.png">
-                        <img src="images/wheels-3.png">
-                    </div>
-                    <div class="about">
-                        <div class="first_wheels">
-                            <h3>SKATEBOARD "SHHH"</h3>
-                            <h4>Новый дизайн старой классики</h4>
-                            <h2>4599 RUB</h2>
-                        </div>
-                        <div class="second_wheels">
-                            <h3>SKATEBOARD "MONSTER"</h3>
-                            <h4>Та самая классика</h4>
-                            <h2>3799 RUB</h2>
-                        </div>
-                        <div class="third_wheels">
-                            <h3>SKATEBOARD "SNEAKER"</h3>
-                            <h4>Для истинных фриков</h4>
-                            <h2>2799 RUB</h2>
-                        </div>
-                    </div>
+              </div>
+              <div class="reviews__item">
+                <img src="./images/reviews/avatar-2.png" alt="" class="reviews__item-avatar">
+                <div class="reviews__item-content">
+                  <p>
+                    Магазин просто супер! Делал покупки не раз и всегда оставался доволен. Огромный ассортимент, цены выгодные, а качество товаров на высоте. Особенно приятно, что есть возможность оформить доставку, что очень удобно для занятых людей. Сайт интуитивно понятен и не вызывает затруднений при оформлении заказа. Советую всем этот магазин!
+                  </p>
                 </div>
-            </section>
-        </main>
-        
-    </div>
-    <footer>
-        <nav></nav>
+              </div>
+              <div class="reviews__item">
+                <img src="./images/reviews/avatar-3.png" alt="" class="reviews__item-avatar">
+                <div class="reviews__item-content">
+                  <p>
+                    Очень довольна своими покупками в этом магазине! Большой выбор, высокое качество товаров и отличный сервис. Заказы доставляются очень быстро, а цены при этом довольно демократичные. Персонал всегда вежлив и готов помочь с выбором. Я нашла здесь все, что искала, и очень рекомендую этот магазин всем своим знакомым!
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__item">
+            <a href="#main" class="footer__item-link">Главная</a>
+            <a href="#sale" class="footer__item-link">Акции</a>
+            <a href="#catalog" class="footer__item-link">Каталог</a>
+            <a href="#about" class="footer__item-link">О нас</a>
+            <a href="#reviews" class="footer__item-link">Отзывы</a>
+          </div>
+          <div class="footer__item">
+            <a href="tel:79123456789" class="footer__item-link">+7-912-345-6789</a>
+            <a href="tel:79987654321" class="footer__item-link">+7-998-765-4321</a>
+            <a href="mailto:kickflip@gmail.com" class="footer__item-link">kickflip@gmail.com</a>
+            <a href="/" class="footer__item-link">Ежедневно</a>
+            <a href="/" class="footer__item-link">С 10:00 до 20:00</a>
+          </div>
+          <div class="footer__item">
+            <a href="tel:79123456789" class="footer__item-link">
+              <img src="./images/footer/ok.svg" alt="">
+              <img src="./images/footer/rg.svg" alt="">
+            </a>
+            <a href="mailto:kickflip@gmail.com" class="footer__item-link">
+              <img src="./images/footer/wh.svg" alt="">
+              <img src="./images/footer/inst.svg" alt="">
+            </a>
+          </div>
+        </div>
+      </div>
     </footer>
-</body>
+    
+
+    
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
 </html>

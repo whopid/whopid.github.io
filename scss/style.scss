@@ -1,0 +1,31 @@
+@import './_vars.scss';
+@import './reset';
+@import './base.scss';
+@import './blocks/header';
+@import './blocks/intro';
+@import './blocks/sale';
+@import './blocks/product';
+@import './blocks/geo';
+@import './blocks/reviews';
+@import './blocks/footer';
+
+
+
+
+@font-face {
+  font-family: 'test';
+  font-weight: 400;
+  src: url('../fonts/SpriteGraffiti-Regular.woff')
+}
+
+@font-face {
+  font-family: 'Angle';
+  font-weight: 400;
+  src: url('../fonts/Angle.woff')
+}
+
+@font-face {
+  font-family: 'AeroMaticsStencil';
+  font-weight: 400;
+  src: url('../fonts/AeroMaticsStencil.woff')
+}

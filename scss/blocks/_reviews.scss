@@ -1,0 +1,72 @@
+.reviews {
+  position: relative;
+  // background-image: url('../../images/bg4.png');
+  background-color: #683BA6;
+  background-size: cover;
+  min-height: 100vh;
+  top: -196px;
+  z-index: 100;
+  padding-top: 100px;
+  padding-bottom: 150px;
+}
+
+.reviews__inner {
+  display: flex;
+  flex-direction: column;
+}
+.reviews-title {
+  font-family: $font-secondary;
+  text-align: center;
+  color: #F1D312;
+  font-size: 120px;
+  margin-bottom: 100px;
+}
+.reviews__items {
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+}
+.reviews__item {
+  display: flex;
+  gap: 16px;
+}
+.reviews__item-avatar {
+}
+.reviews__item-content {
+  padding: 35px 16px 35px 82px;
+  background-color: #fff;
+  position: relative;
+  border-radius: 20px;
+  font-size: 18px;
+  font-family: $font-mons;
+  line-height: 28px;
+  width: 100%;
+
+  p {
+    max-width: 850px;
+  }
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 30px;
+    bottom: 38px;
+    background-image: url('../../images/reviews/quets-1.svg');
+    height: 33px;
+    width: 37px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &::before {
+    content: '';
+    position: absolute;
+    right: 36px;
+    top: 28px;
+    background-image: url('../../images/reviews/quets-2.svg');
+    height: 33px;
+    width: 37px;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}

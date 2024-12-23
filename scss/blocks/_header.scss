@@ -1,0 +1,37 @@
+.header {
+  background-color: #2C272E;
+  position: fixed;
+  z-index: 2000;
+  width: 100%;
+}
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+}
+.logo {
+  width: 300px;
+  margin-left: -150px;
+}
+.nav {
+  display: flex;
+  align-items: center;
+}
+.nav__list {
+  display: flex;
+  align-items: center;
+}
+.nav__list-item {
+  padding: 25px 40px;
+  font-size: 25px;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: $font-secondary;
+
+  &:hover {
+    background-color: #453C49;
+  }
+}
+.nav__list-link {
+  font-family: $font-secondary;
+
+}
